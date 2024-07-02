@@ -1,0 +1,19 @@
+:root {
+  --main-color: #141414;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-color);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

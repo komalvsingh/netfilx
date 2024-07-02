@@ -1,0 +1,97 @@
+
+
+
+.list {
+  width: 100%;
+  
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.row{
+  background-color: black;
+}
+
+.listTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.slideArrow {
+  width: 50px;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.5);
+  color: white;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideArrow.left {
+  left: 0;
+}
+
+.slideArrow.right {
+  right: 0;
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.row__posters {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.row_poster {
+  max-height: 160px;
+  margin-right: 10px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row__posters .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row_poster_container {
+  padding: 10px;
+}
+
+.row_poster {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white;
+}
+
